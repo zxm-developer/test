@@ -1,2 +1,2 @@
-const a = 132323232322323232
+const a = 3
 console.log(a)
