@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# npm run commit
-npx --no-install eslint --ext .js,.vue ./src --fix  &&  commitlint  --config commitlint.config.js -e  $1 && git push
+npm run commit
 
 
  
