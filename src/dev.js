@@ -1,1 +1,2 @@
-const a = 6; console.log(a)
+const a = 666
+console.log(a)

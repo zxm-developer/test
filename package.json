@@ -16,7 +16,8 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.(js|vue)": [
+    "*.(js|vue|html)": [
+      "prettier --write",
       "eslint  --fix",
       "commitlint -e -v"
     ]
