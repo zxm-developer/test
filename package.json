@@ -4,7 +4,7 @@
   "description": "test commit",
   "main": ".eslintrc.js",
   "scripts": {
-    "commit": "eslint --ext .js,.vue ./src --fix  &&  commitlint  --config commitlint.config.js -e -V  && git push",
+    "commit": "eslint --ext .js,.vue ./src --fix  &&  commitlint  --config commitlint.config.js -e -V ",
     "husky": "npx husky-init && npm install"
   },
   "repository": {
