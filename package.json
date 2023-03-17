@@ -18,7 +18,8 @@
   "lint-staged": {
     "*.(js|vue)": [
       "prettier --write",
-      "eslint  --fix"
+      "eslint  --fix",
+      "commitlint -E HUSKY_GIT_PARAMS"
     ]
   },
   "author": "",
