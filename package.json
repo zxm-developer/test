@@ -13,14 +13,12 @@
     "url": "git+https://github.com/zxm-developer/test.git"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.(js|vue)": [
       "prettier --write",
-      "eslint  --fix",
-      "commitlint  --config commitlint.config.js -e"
+      "eslint  --fix"
     ]
   },
   "author": "",
