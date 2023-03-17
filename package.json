@@ -19,7 +19,7 @@
     "*.(js|vue)": [
       "prettier --write",
       "eslint  --fix",
-      "commitlint -E HUSKY_GIT_PARAMS"
+      "commitlint -e -v"
     ]
   },
   "author": "",

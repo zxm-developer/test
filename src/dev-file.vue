@@ -1,11 +1,9 @@
 <template>
-      <div>1321</div>
+  <div>1321</div>
 </template>
 
 <script>
 export default {
-  data () {
-
-  }
+  data () {}
 }
 </script>
