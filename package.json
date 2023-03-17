@@ -5,7 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "eslint --ext .js,.vue ./src --fix  &&  commitlint -e -V --config commitlint.config.js ",
+    "commit": "eslint --ext .js,.vue ./src --fix  &&  commitlint -e -V --config commitlint.config.js  && git push",
     "husky": "npx husky-init && npm install",
     "prepare": "husky install"
   },
