@@ -4,10 +4,8 @@
   "description": "test commit",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "eslint --ext .js,.vue ./src --fix  &&  commitlint  --config commitlint.config.js -e -V  && git push",
     "husky": "npx husky-init && npm install",
-    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
