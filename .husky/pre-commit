@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# npm run commit
-npx --no-install commitlint --edit $1
+npm run commit
+# npx --no-install commitlint --edit $1
 
  
