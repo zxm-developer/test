@@ -1,2 +1,2 @@
-const a = 96
+const a = 9632
 console.log(a)
