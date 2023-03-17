@@ -1,2 +1,2 @@
-const a = 90948
+const a = 3
 console.log(a)
