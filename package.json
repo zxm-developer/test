@@ -1,0 +1,27 @@
+{
+  "name": "test-comit",
+  "version": "1.0.0",
+  "description": "test commit",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "eslint --ext .js,.vue ./src --fix  &&  commitlint -E HUSKY_GIT_PARAMS --config commitlint.config.js ",
+    "husky": "npx husky-init && npm install",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxm-developer/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zxm-developer/test/issues"
+  },
+  "homepage": "https://github.com/zxm-developer/test#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.0"
+  }
+}
