@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "eslint --ext .js,.vue ./src --fix  &&   ",
     "husky": "npx husky-init && npm install",
-    "push": "git push && standard-version"
+    "push": "git push"
   },
   "repository": {
     "type": "git",
