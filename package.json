@@ -22,7 +22,7 @@
     "*.(css|html|js|vue)":[
       "prettier --write",
       "commitlint -e -v",
-      "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+      "conventional-changelog -p angular -i CHANGELOG.md -s -r 30"
     ]
   },
   "author": "",
