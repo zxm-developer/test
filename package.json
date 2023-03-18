@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "eslint --ext .js,.vue ./src --fix  &&   ",
     "husky": "npx husky-init && npm install",
-    "push": "git push"
+    "push": "git push && standard-version"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,7 @@
     ],
     "*.(css|html|js|vue)": [
       "prettier --write",
-      "commitlint -e -v",
-      "standard-version"
+      "commitlint -e -v"
     ]
   },
   "author": "",
