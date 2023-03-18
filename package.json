@@ -19,10 +19,10 @@
     "*.(js|vue)": [
       "eslint  --fix"
     ],
-    "*.(css|html|js|vue)":[
+    "*.(css|html|js|vue)": [
       "prettier --write",
       "commitlint -e -v",
-      "conventional-changelog -p angular -i CHANGELOG.md -s -r 30"
+      "standard-version"
     ]
   },
   "author": "",
@@ -34,7 +34,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "standard-version": "^9.5.0"
   },
   "dependencies": {
     "prettier": "^2.8.4"
