@@ -21,7 +21,8 @@
     ],
     "*.(css|html|js|vue)":[
       "prettier --write",
-      "commitlint -e -v"
+      "commitlint -e -v",
+      "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
     ]
   },
   "author": "",
