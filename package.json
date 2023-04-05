@@ -6,21 +6,21 @@
   "scripts": {
     "commit": "eslint --ext .js,.vue ./src --fix   ",
     "husky": "npx husky-init && npm install",
-    "push": "commitlint -e -v && git push"
+    "push": "git push"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zxm-developer/test.git"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "commitlint -e -v && lint-staged"
   },
   "lint-staged": {
     "*.(js|vue)": [
       "eslint  --fix"
     ],
     "*.(css|html|js|vue)": [
-      "prettier --write",
+      "prettier --write"
     ]
   },
   "author": "",
