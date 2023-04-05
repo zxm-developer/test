@@ -13,7 +13,7 @@
     "url": "git+https://github.com/zxm-developer/test.git"
   },
   "gitHooks": {
-    "pre-commit": "commitlint -e -v && lint-staged"
+    "pre-commit": "commitlint -e -V && lint-staged"
   },
   "lint-staged": {
     "*.(js|vue)": [
