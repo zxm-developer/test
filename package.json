@@ -7,7 +7,7 @@
     "commit": "commitlint -e -V",
     "husky": "npx husky-init && npm install",
     "push": "git push",
-    "lint": "git add . && npm exec lint-staged"
+    "lint": "npm exec lint-staged"
   },
   "repository": {
     "type": "git",
