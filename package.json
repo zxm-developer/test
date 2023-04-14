@@ -4,17 +4,14 @@
   "description": "test commit",
   "main": ".eslintrc.js",
   "scripts": {
-    "commit": "eslint --ext .js,.vue ./src --fix   ",
+    "commit": "commitlint -e -V",
     "husky": "npx husky-init && npm install",
     "push": "git push",
-    "commit":"commitlint -e -V"
+    "lint": "git add . && npm exec lint-staged"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zxm-developer/test.git"
-  },
-  "gitHooks": {
-    "pre-commit": "commitlint -e -V"
   },
   "lint-staged": {
     "*.(js|vue)": [
@@ -33,8 +30,16 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint": "^8.38.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.10.0",
     "husky": "^8.0.0",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "typescript": "*"
   },
   "dependencies": {
     "prettier": "^2.8.4"
