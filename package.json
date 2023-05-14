@@ -1,13 +1,16 @@
 {
   "name": "test-comit",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "test commit",
   "main": ".eslintrc.js",
   "scripts": {
     "commit": "commitlint -e -V",
     "husky": "npx husky-init && npm install",
     "push": "git push",
-    "lint": "npm exec lint-staged"
+    "lint": "npm exec lint-staged",
+    "style": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
+    "eslint":"eslint  \"src/**/*.(js|vue)\" --fix",
+    "prettier":"eslint  \"src/**/*.(css|scss|html|js|vue)\" --fix"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,11 @@
     "*.(js|vue)": [
       "eslint  --fix"
     ],
-    "*.(css|html|js|vue)": [
+    "*.(css|scss|html|js|vue)": [
       "prettier --write"
+    ],
+    "*.(vue|scss|css)": [
+      "stylelint --fix"
     ]
   },
   "author": "",
@@ -38,10 +44,19 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.10.0",
     "husky": "^8.0.0",
+    "postcss": "^8.4.23",
+    "postcss-html": "^1.5.0",
+    "postcss-sass": "^0.5.0",
     "standard-version": "^9.5.0",
+    "stylelint": "^15.6.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
     "typescript": "*"
   },
   "dependencies": {
-    "prettier": "^2.8.4"
+    "events": "^3.3.0",
+    "prettier": "^2.8.4",
+    "stylelint-order": "^6.0.3"
   }
 }
