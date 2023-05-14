@@ -7,3 +7,10 @@ export default {
   data () {}
 }
 </script>
+<style>
+a {
+    width: 100px;
+    font-size: 10px;
+    background-color: red;
+}
+</style>

@@ -5,12 +5,13 @@
   "main": ".eslintrc.js",
   "scripts": {
     "commit": "commitlint -e -V",
-    "husky": "npx husky-init && npm install",
+    "install": "git config core.hooksPath .husky && npm install",
     "push": "git push",
     "lint": "npm exec lint-staged",
     "style": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
-    "eslint":"eslint  \"src/**/*.(js|vue)\" --fix",
-    "prettier":"eslint  \"src/**/*.(css|scss|html|js|vue)\" --fix"
+    "eslint": "eslint  \"src/**/*.(js|vue)\" --fix",
+    "prettier": "eslint  \"src/**/*.(css|scss|html|js|vue)\" --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
