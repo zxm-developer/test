@@ -9,7 +9,7 @@ export default {
 </script>
 <style>
 a {
-    width: 100px;
+    width: 13002px;
     font-size: 10px;
     background-color: red;
 }
